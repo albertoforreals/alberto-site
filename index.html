@@ -12,19 +12,15 @@
       font-family: 'Arial', sans-serif;
     }
 
-    /* Default background color */
-    .dark-mode {
-      background-color: #000;
-      color: #fff;
-    }
+
     .light-mode {
-      background-color: #fff;
-      color: #000;
+      background-color: #f0f0f0;
+      color: #333;
     }
 
- 
+   
     .reactive-background {
-      background: linear-gradient(45deg, #1e1e1e, #00aaff, #ff00ff);
+      background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #f6f6f6);
       background-size: 400% 400%;
       animation: gradient-animation 8s ease infinite;
       min-height: 100vh;
@@ -36,7 +32,7 @@
       100% { background-position: 0% 50%; }
     }
 
-  
+    
     h1 {
       font-size: 2rem;
       text-align: center;
@@ -51,24 +47,15 @@
       margin: 0 auto;
     }
 
-    button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      background-color: #00aaff;
-      border: none;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 5px;
+  
+    link[rel="icon"] {
+      width: auto;
+      height: auto;
     }
 
-    button:hover {
-      background-color: #ff00ff;
-    }
   </style>
 </head>
-<body class="reactive-background">
+<body class="reactive-background light-mode">
 
   <h1>
     Old one got blocked — Follow @mindslot on IG — Alberto E = mc²
@@ -76,11 +63,11 @@
 
   <iframe 
     src="https://zpowergenerator.mightybaobab.com" 
-    title="Totally Math">
+    title="Math Viewer">
   </iframe>
 
   <h2>
-    ignore its so it doesnt get blocked 1+1=2 2+2=4 2x2=4 5x5=25 PEMDAS Equation
+    ignore its so it doesnt get blocked 1+1=2 2+2=4 2x2=4 5x5=25 PEMDASEquation
 
     Function
 
@@ -225,14 +212,5 @@
     Transformations and Modeling with Equations
   </h2>
 
-  <!-- Button to toggle dark/light mode -->
-  <button onclick="toggleMode()">Toggle Dark/Light Mode</button>
-
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle('dark-mode');
-      document.body.classList.toggle('light-mode');
-    }
-  </script>
 </body>
 </html>
