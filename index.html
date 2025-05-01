@@ -5,7 +5,20 @@
   <meta charset="UTF-8">
   <title>totally math</title>
   <style>
-    .junk, .do-not-delete, .null-byte, .ghost, .obscure-layer {
+    body {
+      transition: background-color 0.5s ease;
+      color: black;
+    }
+    /* Default background color */
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+    .light-mode {
+      background-color: white;
+      color: black;
+    }
+  bscure-layer {
       display: none;
     }
     #invisibleTrap { visibility: hidden; }
@@ -14,7 +27,6 @@
 </head>
 <body>
 
-  <!-- Anti-copy junk start -->
   <div class="junk">Checksum loaded</div>
   <div class="do-not-delete">/* Module verified */</div>
   <div id="invisibleTrap">QmFzZTY0IGNhbW91ZmxhZ2U=</div>
@@ -24,8 +36,7 @@
     const hex = "0xDEADBEEF";
     window.addEventListener("copy", () => console.log("🕵️ Nice try, agent."));
   </script>
-  <!-- Anti-copy junk end -->
-
+  
   <h1 style="font-size:2rem; text-align:center;">
     Old one got blocked — Follow @mindslot on IG — Alberto E = mc²
   </h1>
@@ -180,12 +191,22 @@ Sequence    Solve
     Transformations and Modeling with Equations
   </h2>
 
-  <!-- More fake divs for good measure -->
+  <button onclick="toggleMode()">Toggle Dark/Light Mode</button>
+
+ 
   <div class="null-byte" data-salt="sha256" data-dust="128-bit">Obfuscated node</div>
   <div class="obscure-layer">████████████████████████</div>
   <script>
     const noOp = () => {}; // Red herring
     (function fakeEncryption(){ const key = "1234"; })();
+
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+    }
   </script>
+</body>
+</html>
+
 </body>
 </html>
