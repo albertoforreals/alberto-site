@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+you forgot to make the background reactive and for it to change colors through white and black   <!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="icon" href="favicon.png" type="image/png" />
@@ -8,53 +8,35 @@
     body {
       margin: 0;
       padding: 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
       font-family: 'Arial', sans-serif;
-      overflow: hidden; /* Prevent scrollbars from showing */
     }
 
-    /* Galaxy Background */
+
+    .light-mode {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+   
     .reactive-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, #1a1a1a, #000000);
-      background-size: 200% 200%;
-      animation: galaxy-animation 60s linear infinite;
+      background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #f6f6f6);
+      background-size: 400% 400%;
+      animation: gradient-animation 8s ease infinite;
+      min-height: 100vh;
     }
 
-    @keyframes galaxy-animation {
+    @keyframes gradient-animation {
       0% { background-position: 0% 50%; }
-      100% { background-position: 100% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
-    /* Stars Animation */
-    .stars {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://cdn.pixabay.com/photo/2018/11/16/18/13/stars-3828750_960_720.jpg');
-      background-size: cover;
-      z-index: -1;
-      opacity: 0.4;
-      animation: star-field 150s infinite linear;
-    }
-
-    @keyframes star-field {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-100%, -100%); }
-    }
-
+    
     h1 {
       font-size: 2rem;
       text-align: center;
       margin-top: 20px;
-      z-index: 1;
-      position: relative;
-      color: white;
     }
 
     iframe {
@@ -63,25 +45,17 @@
       border: none;
       display: block;
       margin: 0 auto;
-      z-index: 1;
     }
 
-    h2 {
-      color: white;
-      font-size: 1.2rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1;
-      position: relative;
-    }
-
+  
     link[rel="icon"] {
       width: auto;
       height: auto;
     }
+
   </style>
 </head>
-<body class="reactive-background">
+<body class="reactive-background light-mode">
 
   <h1>
     Old one got blocked — Follow @mindslot on IG — Alberto E = mc²
@@ -238,11 +212,8 @@
     Transformations and Modeling with Equations
   </h2>
 
-  <div class="stars"></div>
-
 </body>
 </html>
-
   <div class="stars"></div>
 
 </body>
