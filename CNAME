@@ -1,4 +1,4 @@
-echo "mathalgebrastudyguide.com" > CNAME
+echo "mathalgebrastudyguide.info" > CNAME
 git add CNAME
 git commit -m "Add custom domain"
 git push
